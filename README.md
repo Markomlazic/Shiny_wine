@@ -20,10 +20,20 @@ white.url <- "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-qua
 white.raw <- read.csv(white.url, header = TRUE, sep = ";")
 head(white.raw)
 ```
-Shiny Files
+Random Forest
+
+* Random decision forests represent a type of learning methods used extensively for classification and regression purposes.
+* They work by constructing a multiple number of decision trees and merge them to create a prediction that is more acurate.
+* In the case of white wine data, the quality is represented as a qualitative trait with seven different categories. Wines of low quality have quality value of three while wines of excellent quality have the highest value of nine.
+* Random Forest methods are particularly suitable for classification problems such as these.
+
+
+Shiny files
 
 The App is build using the Shiny package. The source code is contained within 2 files:
 - `ui.R`
 - `server.R`
 
 Both files can be found here: [GitHub](https://github.com/Markomlazic/Shiny_wine)
+
+
